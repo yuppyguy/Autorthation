@@ -1,0 +1,17 @@
+{
+  "name": "autorthation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/application.js",
+    "build-dist": "./node_modules/typescript/bin/tsc",
+    "mocha": "mocha --recursive --reporter spec -r ./dist/test/bootstrap.js",
+    "test": "npm run mocha -- ./dist/test/ -r ./dist/test/integration/bootstrap.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.3"
+  }
+}
